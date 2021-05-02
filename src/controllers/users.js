@@ -79,7 +79,7 @@ exports.updateUser = async (req, res) => {
   }
 };
 
-exports.deleteUser = async (req, res) => {
+exports.deleteUsers = async (req, res) => {
   try {
     const id = req.params.id;
     const checkUser = users.find((data) => data.id == id);
